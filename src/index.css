@@ -1,4 +1,28 @@
+/* Existing Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Define Tiempos Headline (400) - Keeping .otf as before */
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/src/assets/fonts/TiemposHeadline/TiemposHeadline-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Define Messina Sans (600) with multiple formats */
+@font-face {
+  font-family: 'Messina Sans';
+  src: url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.eot'); /* IE6-IE8 */
+  src: url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE9 Compatibility Mode */
+       url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.woff2') format('woff2'), /* Modern browsers - Include if you have .woff2 */
+       url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.woff') format('woff'), /* Wide support */
+       url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.svg#MessinaSans') format('svg'); /* Legacy iOS - Include if you have .svg */
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -75,18 +99,13 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight;
+    font-family: 'Tiempos Headline', serif;
+    font-weight: 400;
   }
 
-  h1 {
-    @apply text-4xl lg:text-5xl;
-  }
-
-  h2 {
-    @apply text-3xl lg:text-4xl;
-  }
-
-  h3 {
-    @apply text-2xl lg:text-3xl;
+  p {
+    font-family: 'Messina Sans', sans-serif;
+    font-weight: 600;
   }
 }
 
