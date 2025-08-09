@@ -27,40 +27,40 @@ const Header = () => {
         <nav className="border-t border-gray-100">
           <div className="flex items-center justify-center space-x-8 py-4">
             <a 
-              href="#dentures" 
+              href="/" 
               className="text-sm font-medium text-dental-gray hover:text-dental-blue transition-colors uppercase tracking-wide"
             >
-              DENTURES
+              HOME
             </a>
             <a 
-              href="#implants" 
+              href="/services" 
               className="text-sm font-medium text-dental-gray hover:text-dental-blue transition-colors uppercase tracking-wide"
             >
-              DENTAL IMPLANTS
+              SERVICES
             </a>
             <a 
-              href="#aligners" 
+              href="/about" 
               className="text-sm font-medium text-dental-gray hover:text-dental-blue transition-colors uppercase tracking-wide"
             >
-              CLEAR ALIGNERS
+              ABOUT
             </a>
             <a 
-              href="#services" 
+              href="/locations" 
               className="text-sm font-medium text-dental-gray hover:text-dental-blue transition-colors uppercase tracking-wide"
             >
-              GENERAL DENTAL SERVICES
+              LOCATIONS
             </a>
             <a 
-              href="#costs" 
+              href="/insurance" 
               className="text-sm font-medium text-dental-gray hover:text-dental-blue transition-colors uppercase tracking-wide"
             >
-              COSTS & AFFORDABILITY
+              INSURANCE & FINANCING
             </a>
             <a 
-              href="#financing" 
+              href="/contact" 
               className="text-sm font-medium text-dental-gray hover:text-dental-blue transition-colors uppercase tracking-wide"
             >
-              DENTAL FINANCING & INSURANCE
+              CONTACT
             </a>
           </div>
         </nav>
