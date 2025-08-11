@@ -169,7 +169,7 @@ const Hero = () => {
             size="lg"
             className="bg-white text-dental-blue hover:bg-dental-light-gray w-full sm:w-auto"
           >
-            Start Your Project
+            Send Cases
           </Button>
         </div>
       </section>
