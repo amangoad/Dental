@@ -74,24 +74,25 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* STATS SECTION */}
-      <section className="dental-section bg-white">
-        <div className="dental-container">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {stats.map((stat, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="p-6">
-                  <stat.icon className="w-10 h-10 sm:w-12 sm:h-12 text-dental-blue mx-auto mb-3 sm:mb-4" />
-                  <div className="text-2xl sm:text-3xl font-bold text-dental-blue mb-1 sm:mb-2">
-                    {stat.number}
-                  </div>
-                  <p className="text-sm sm:text-base text-dental-gray">{stat.label}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+{/* STATS SECTION */}
+<section className="dental-section bg-white shadow-md hover:shadow-2xl transition-shadow duration-300 rounded-2xl">
+  <div className="dental-container">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      {stats.map((stat, index) => (
+        <Card key={index} className="text-center">
+          <CardContent className="p-6">
+            <stat.icon className="w-10 h-10 sm:w-12 sm:h-12 text-dental-blue mx-auto mb-3 sm:mb-4" />
+            <div className="text-2xl sm:text-3xl font-bold text-dental-blue mb-1 sm:mb-2">
+              {stat.number}
+            </div>
+            <p className="text-sm sm:text-base text-dental-gray">{stat.label}</p>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
 
      {/* MISSION SECTION */}
 <section
@@ -100,56 +101,60 @@ const Hero = () => {
     backgroundImage: "url('https://styles.prosites.com/customs/2285/290690/images/panel1.jpg')",
   }}
 >
-  <div className="dental-container bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-      <div>
-        <h2 className="text-2xl sm:text-3xl font-bold text-dental-blue mb-4 sm:mb-6">
-          Our Mission
-        </h2>
-        <p className="text-base sm:text-lg text-dental-gray mb-4 sm:mb-6 leading-relaxed">
-          We exist to support dental labs with precision and innovation. Our mission is to deliver reliable, high-quality dental design services while building trust and lasting partnerships with our clients.
-          Every lab that works with our team receives personalized designs and solutions tailored to their unique requirements and production goals.
-        </p>
-      </div>
-      <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg">
-        <h3 className="text-xl sm:text-2xl font-bold text-dental-blue mb-3 sm:mb-4">
-          What Sets Us Apart
-        </h3>
-        <ul className="space-y-2 sm:space-y-3 text-dental-gray">
-          <li className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            Same-day design delivery options available
-          </li>
-          <li className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            Expert CAD/CAM technicians for faster turnarounds
-          </li>
-          <li className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            Flexible outsourcing packages for all budgets
-          </li>
-          <li className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            Comprehensive dental design solutions under one roof
-          </li>
-        </ul>
-      </div>
+<div
+  className="dental-container bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8"
+  style={{ backgroundColor: "rgb(227 230 255 / 44%)" }}
+>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <div>
+      <h2 className="text-5xl  sm:text-3xl font-bold text-dental-blue mb-4 sm:mb-6">
+        Our Mission
+      </h2>
+      <p className="text-base sm:text-lg text-dental-gray mb-4 sm:mb-6 leading-relaxed">
+        We exist to support dental labs with precision and innovation. Our mission is to deliver reliable, high-quality dental design services while building trust and lasting partnerships with our clients.
+        Every lab that works with our team receives personalized designs and solutions tailored to their unique requirements and production goals.
+      </p>
+    </div>
+    <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg">
+      <h3 className="text-xl sm:text-2xl font-bold text-dental-blue mb-3 sm:mb-4">
+        What Sets Us Apart
+      </h3>
+      <ul className="space-y-2 sm:space-y-3 text-dental-gray">
+        <li className="flex items-start">
+          <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          Same-day design delivery options available
+        </li>
+        <li className="flex items-start">
+          <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          Expert CAD/CAM technicians for faster turnarounds
+        </li>
+        <li className="flex items-start">
+          <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          Flexible outsourcing packages for all budgets
+        </li>
+        <li className="flex items-start">
+          <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+          Comprehensive dental design solutions under one roof
+        </li>
+      </ul>
     </div>
   </div>
+</div>
+
 </section>
 
 
       {/* VALUES SECTION */}
       <section className="dental-section bg-white">
         <div className="dental-container">
-          <h2 className="text-2xl sm:text-3xl font-bold text-dental-blue text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-5xl font-bold text-dental-blue text-center mb-8 sm:mb-12">
             Our Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {values.map((value, index) => (
               <Card key={index} className="dental-card">
                 <CardContent className="p-6">
-                  <h3 className="text-lg sm:text-xl font-bold text-dental-blue mb-2 sm:mb-3">
+                  <h3 className="text-lg sm:text-2xl font-bold text-dental-blue mb-2 sm:mb-3">
                     {value.title}
                   </h3>
                   <p className="text-sm sm:text-base text-dental-gray leading-relaxed">
@@ -163,20 +168,80 @@ const Hero = () => {
       </section>
 
       {/* CTA SECTION */}
-      <section className="dental-section bg-dental-blue">
-        <div className="dental-container text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
-            Ready to Experience the Difference?
+   {/* Special Offer */}
+         <section className="dental-section bg-dental-blue">
+           <div className="dental-container text-center">
+             <h2 className="text-3xl font-bold text-white mb-6">
+               Limited Time Offer for New Clients
+             </h2>
+             <div className="bg-white/10 rounded-2xl p-8 max-w-2xl mx-auto mb-8">
+               <h3 className="text-2xl font-bold text-white mb-4">
+                 20% Off Your First 10 Cases
+               </h3>
+               <p className="text-white/90 mb-6">
+                 Experience our service at a discounted rate — perfect for labs looking to scale without extra overhead.
+               </p>
+               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                 <Button size="lg" variant="outline" className="border-white text-dental-blue hover:bg-white hover:text-dental-blue">
+                   Get Started
+                 </Button>
+                 <Button size="lg" variant="outline" className="border-white text-dental-blue hover:bg-white hover:text-dental-blue">
+                   Book a Demo
+                 </Button>
+               </div>
+             </div>
+           </div>
+         </section>
+           {/* FAQ Section */}
+      <section className="dental-section bg-white">
+        <div className="dental-container">
+          <h2 className="text-5xl font-bold text-dental-blue text-center mb-12">
+            Frequently Asked Questions
           </h2>
-          <p className="text-lg sm:text-xl text-white mb-6 sm:mb-8 max-w-2xl mx-auto">
-            Join over 1 million cases that have trusted us with their dental designs.
-          </p>
-          <Button
-            size="lg"
-            className="bg-white text-dental-blue hover:bg-dental-light-gray w-full sm:w-auto"
-          >
-            Send Cases
-          </Button>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="dental-card">
+              <CardContent className="p-6">
+                <h3 className="font-bold text-3xl text-dental-blue mb-3">
+                  What file formats do you accept?
+                </h3>
+                <p className="text-dental-gray text-1xl">
+                  We accept STL, PLY, OBJ, and other common dental CAD formats. 
+                  Contact us for custom requirements.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="dental-card">
+              <CardContent className="p-6">
+                <h3 className="font-bold text-dental-blue text-3xl mb-3">
+                  How fast is your turnaround?
+                </h3>
+                <p className="text-dental-gray text-1xl">
+                  Most single-unit cases are delivered within 24–48 hours. 
+                  Complex projects may require additional time.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="dental-card">
+              <CardContent className="p-6">
+                <h3 className="font-bold text-dental-blue text-3xl mb-3">
+                  Do you offer trial projects?
+                </h3>
+                <p className="text-dental-gray text-1xl">
+                  Yes, we offer sample cases so you can evaluate our quality and service before committing.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="dental-card">
+              <CardContent className="p-6">
+                <h3 className="font-bold text-dental-blue text-3xl mb-3">
+                  Is my data secure?
+                </h3>
+                <p className="text-dental-gray text-1xl">
+                  Absolutely — we use secure file transfer protocols and strict confidentiality agreements for all client data.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
     </>

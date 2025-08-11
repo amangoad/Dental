@@ -9,12 +9,12 @@ const Services = () => {
   const allServices = [
     { title: "Crown & Bridge", description: "Precision CAD designs for crowns and bridges with lifelike aesthetics.", link: "#crowns" },
     { title: "Veneer", description: "Our custom veneer designs instantly enhance smiles by refining shape, size, and color for a perfect fit.", link: "#veneer" },
-    { title: "Implant Crown Design", description: "Highly accurate designs for screw-retained implant crowns that ensure stability, aesthetics, and ease of maintenance.", link: "#implant" },
-    { title: "Inlay & Onlay Design", description: "Digitally designed inlays and onlays that preserve natural tooth structure while ensuring strength and longevity.", link: "#inlay" },
-    { title: "Valplast® Flexible Partials", description: "Flexible partial frameworks that offer comfort, aesthetics, and secure retention for daily wear.", link: "#valplast" },
+    { title: "Implant Crown ", description: "Highly accurate designs for screw-retained implant crowns that ensure stability, aesthetics, and ease of maintenance.", link: "#implant" },
+    { title: "Inlay & Onlay ", description: "Digitally designed inlays and onlays that preserve natural tooth structure while ensuring strength and longevity.", link: "#inlay" },
+    { title: "Valplast Flexible", description: "Flexible partial frameworks that offer comfort, aesthetics, and secure retention for daily wear.", link: "#valplast" },
     { title: "Digital Denture", description: "Digitally designed dentures for accuracy, comfort, and rapid fabrication.", link: "#digital-denture" },
-    { title: "Night Guard Design", description: "Custom night guard designs to protect teeth from grinding, clenching, and bruxism-related wear.", link: "#night-guard" },
-    { title: "CPD & RPD Design", description: "Custom partial dentures that restore function while maintaining a natural, aesthetic appearance.", link: "#cpd-rpd" }
+    { title: "Night Guard ", description: "Custom night guard designs to protect teeth from grinding, clenching, and bruxism-related wear.", link: "#night-guard" },
+    { title: "Cpd & Rpd", description: "Custom partial dentures that restore function while maintaining a natural, aesthetic appearance.", link: "#cpd-rpd" }
   ];
 
   return (
@@ -37,18 +37,19 @@ const Services = () => {
             <SwiperSlide key={index}>
               <Card className="dental-card group cursor-pointer h-full">
                 <CardContent className="p-6 flex flex-col justify-between h-full">
-                  <h3 className="text-dental-blue mb-3 group-hover:text-primary-hover transition-colors">
+                  <h3 className="text-dental-blue font-bold text-2xl mb-3 group-hover:text-primary-hover transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-dental-gray mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  <Button
-                    variant="link"
-                    className="p-0 h-auto text-dental-blue hover:text-primary-hover font-medium mt-auto"
-                  >
-                    Learn more
-                  </Button>
+<Button
+  className="bg-dental-blue text-white hover:bg-primary-hover font-medium mt-auto self-start"
+>
+  Learn more
+</Button>
+
+
                 </CardContent>
               </Card>
             </SwiperSlide>

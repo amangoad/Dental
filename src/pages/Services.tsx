@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const Services = () => {
   const serviceCategories = [
     {
-      title: "Restorative & Cosmetic Design Solutions",
+      // title: "Restorative & Cosmetic Design Solutions",
       services: [
         {
           name: "Crown & Bridge ",
@@ -29,7 +29,7 @@ const Services = () => {
             "Digitally designed inlays and onlays that preserve natural tooth structure while ensuring strength and longevity."
         },
         {
-          name: "Valplast® Flexible Partials",
+          name: "Valplast Flexible",
           description:
             "We design flexible partial frameworks that offer comfort, aesthetics, and secure retention for daily wear."
         },
@@ -86,7 +86,7 @@ const Services = () => {
               {category.services.map((service, serviceIndex) => (
                 <Card key={serviceIndex} className="dental-card group">
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-dental-blue mb-3 group-hover:text-primary-hover transition-colors">
+                    <h3 className="text-2xl font-bold text-dental-blue mb-3 group-hover:text-primary-hover transition-colors">
                       {service.name}
                     </h3>
                     <p className="text-dental-gray mb-4 leading-relaxed">

@@ -2,10 +2,17 @@ import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-dental-blue text-white">
+    <footer
+      className="relative bg-center bg-cover"
+      style={{
+        // backgroundImage: "url('https://www.shutterstock.com/image-photo/dental-dent-health-care-ad-600nw-2264009499.jpg')", // Replace with your actual image
+      }}
+    >
+      {/* Transparent Overlay */}
+      <div className="absolute inset-0 bg-dental-blue"></div>
+
       {/* Footer Links */}
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
-        
+      <div className="relative max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-5 gap-8 text-white">
         <div>
           <h3 className="font-bold mb-4">Our Services</h3>
           <ul className="space-y-2 text-sm">
@@ -64,11 +71,10 @@ const Footer = () => {
             <li><a href="#" className="hover:underline">Terms of Service</a></li>
           </ul>
         </div>
-
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-white/20 py-6 text-center">
+      <div className="relative border-t border-white/20 py-6 text-center text-white">
         <div className="flex justify-center gap-4 mb-4">
           <a
             href="https://www.facebook.com/profile.php?id=61577230354719"
@@ -84,11 +90,7 @@ const Footer = () => {
           >
             <Instagram className="w-5 h-5 cursor-pointer text-white" />
           </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="#" target="_blank" rel="noopener noreferrer">
             <Youtube className="w-5 h-5 cursor-pointer text-white" />
           </a>
           <a
@@ -99,7 +101,7 @@ const Footer = () => {
             <Linkedin className="w-5 h-5 cursor-pointer text-white" />
           </a>
         </div>
-        <p className="text-sm text-white">
+        <p className="text-sm">
           © 2025 DentSmileDesign. All rights reserved. Dental CAD/CAM Outsourcing Solutions.
         </p>
       </div>
