@@ -7,9 +7,9 @@ import { Users, Award, Clock, Heart } from "lucide-react";
 const About = () => {
   const stats = [
     { icon: Users, number: "500+", label: "Dental labs & offices served" },
-    { icon: Award, number: "15+", label: "Years of CAD/CAM expertise" },
-    { icon: Clock, number: "24 hrs", label: "Average design turnaround" },
-    { icon: Heart, number: "250k+", label: "Cases successfully delivered" }
+    { icon: Award, number: "10+", label: "Years of CAD/CAM expertise" },
+    { icon: Clock, number: "24 Hrs", label: "Average design turnaround" },
+    { icon: Heart, number: "1M+", label: "Cases successfully delivered" }
   ];
 
   const values = [

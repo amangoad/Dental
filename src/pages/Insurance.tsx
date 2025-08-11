@@ -49,8 +49,8 @@ const Insurance = () => {
       {/* Hero Section */}
       <section className="bg-dental-light-gray py-16">
         <div className="dental-container text-center">
-          <h1 className="text-dental-blue mb-6">
-            Why Choose Our Dental Design Outsourcing?
+          <h1 className="text-dental-blue text-5xl mb-6 font-bold">
+            Why Choose us?
           </h1>
           <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
             We provide world-class dental design services to help labs and clinics 

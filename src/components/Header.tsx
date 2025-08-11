@@ -11,7 +11,7 @@ const Header = () => {
     { href: "/services", label: "SERVICES" },
     { href: "/about", label: "ABOUT" },
     { href: "/locations", label: "LOCATIONS" },
-    { href: "/insurance", label: "INSURANCE & FINANCING" },
+    { href: "/insurance", label: "Why choose us" },
     { href: "/contact", label: "CONTACT" },
   ];
 

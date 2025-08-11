@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Locations from "./pages/Locations";
-import Insurance from "./pages/Insurance";
+import Insurance from "./pages/wcu";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 

@@ -6,9 +6,9 @@ import heroImage from "@/assets/dental-hero.jpg";
 
 const Hero = () => {
   const stats = [
-    { icon: Users, number: "900+", label: "Lab" },
-    { icon: Award, number: "10+", label: "Years of experience" },
-    { icon: Clock, number: "9+", label: "Google Ratings" },
+    { icon: Users, number: "600+", label: "Dental labs & offices served" },
+    { icon: Award, number: "10+", label: "Years of CAD/CAM expertise" },
+    { icon: Clock, number: "24 Hrs", label: "Average design turnaround" },
     { icon: Heart, number: "1M+", label: "Cases Design" }
   ];
 

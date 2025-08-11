@@ -9,42 +9,42 @@ const Services = () => {
       title: "Restorative & Cosmetic Design Solutions",
       services: [
         {
-          name: "Crown & Bridge Design",
+          name: "Crown & Bridge ",
           description:
             "We craft precision CAD designs for crowns and bridges that combine function, lifelike aesthetics, and structural integrity."
         },
         {
-          name: "Veneer Design",
+          name: "Veneer",
           description:
             "Our custom veneer designs instantly enhance smiles by refining shape, size, and color for a perfect fit."
         },
         {
-          name: "Screw-Retained Implant Crown Design",
+          name: "Implant",
           description:
             "We provide highly accurate designs for screw-retained implant crowns that ensure stability, aesthetics, and ease of maintenance."
         },
         {
-          name: "Inlay & Onlay Design",
+          name: "Inlay & Onlay",
           description:
             "Digitally designed inlays and onlays that preserve natural tooth structure while ensuring strength and longevity."
         },
         {
-          name: "Valplast® Flexible Partial Design",
+          name: "Valplast® Flexible Partials",
           description:
             "We design flexible partial frameworks that offer comfort, aesthetics, and secure retention for daily wear."
         },
         {
-          name: "Digital Denture Design",
+          name: "Digital Denture",
           description:
             "Our dentures are digitally designed for accuracy, comfort, and rapid fabrication."
         },
         {
-          name: "Night Guard Design",
+          name: "Night Guard",
           description:
             "Custom night guard designs protect patients’ teeth from grinding, clenching, and bruxism-related wear."
         },
         {
-          name: "CPD & RPD Design",
+          name: "CPD & RPD",
           description:
             "We design custom partial dentures that restore function while maintaining a natural, aesthetic appearance."
         }
