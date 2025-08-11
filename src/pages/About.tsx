@@ -1,32 +1,33 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Award, Clock, Heart } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Users, number: "900+", label: "Dental offices nationwide" },
-    { icon: Award, number: "25+", label: "Years of experience" },
-    { icon: Clock, number: "7 days", label: "Average denture completion" },
-    { icon: Heart, number: "1M+", label: "Patients served" }
+    { icon: Users, number: "500+", label: "Dental labs & offices served" },
+    { icon: Award, number: "15+", label: "Years of CAD/CAM expertise" },
+    { icon: Clock, number: "24 hrs", label: "Average design turnaround" },
+    { icon: Heart, number: "250k+", label: "Cases successfully delivered" }
   ];
 
   const values = [
     {
-      title: "Accessible Care",
-      description: "We believe everyone deserves quality dental care, regardless of their financial situation."
+      title: "Precision-Driven",
+      description: "Every design is meticulously crafted for accuracy, fit, and patient comfort."
     },
     {
-      title: "Advanced Technology",
-      description: "Our state-of-the-art equipment and techniques ensure the best possible outcomes."
+      title: "Cutting-Edge Technology",
+      description: "We use the latest CAD/CAM tools and workflows to ensure flawless results."
     },
     {
       title: "Expert Team",
-      description: "Our experienced dentists and specialists are committed to your oral health."
+      description: "Our designers are experienced professionals with extensive dental lab knowledge."
     },
     {
-      title: "Patient-First",
-      description: "Your comfort and satisfaction are our top priorities in everything we do."
+      title: "Client-Centric Approach",
+      description: "Your deadlines, preferences, and patient needs are at the core of everything we do."
     }
   ];
 
@@ -37,12 +38,13 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-dental-light-gray py-16">
         <div className="dental-container text-center">
-          <h1 className="text-dental-blue mb-6">
-            About AspenDental
+          <h1 className="text-dental-blue text-5xl mb-6 font-bold">
+            About 
           </h1>
           <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
-            For over 25 years, we've been making quality dental care accessible and affordable for everyone. 
-            With 900+ offices nationwide, we're here to help you smile with confidence.
+            For over 15 years, we've been partnering with dental labs and offices worldwide,
+            delivering precision CAD/CAM designs with speed and reliability. From crowns and bridges
+            to full-mouth reconstructions, we help you scale your workflow without sacrificing quality.
           </p>
         </div>
       </section>
@@ -73,12 +75,12 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-dental-gray mb-6 leading-relaxed">
-                We exist to care for our patients with compassion and excellence. Our mission is to deliver 
-                accessible, high-quality dental care while building trust and lasting relationships with our communities.
+                Our mission is to empower dental professionals with precise, fast, and
+                reliable digital designs that enhance patient outcomes and streamline workflows.
               </p>
               <p className="text-lg text-dental-gray leading-relaxed">
-                Every patient who walks through our doors receives personalized attention and care tailored 
-                to their unique needs and circumstances.
+                Whether you're a busy lab or a growing practice, we serve as your extended design team —
+                ensuring every case is delivered on time, every time.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
@@ -88,19 +90,19 @@ const About = () => {
               <ul className="space-y-3 text-dental-gray">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-dental-blue rounded-full mt-3 mr-3 flex-shrink-0"></span>
-                  Same-day emergency appointments available
+                  24-hour average turnaround on most cases
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-dental-blue rounded-full mt-3 mr-3 flex-shrink-0"></span>
-                  Onsite labs for faster denture creation
+                  Seamless integration with your preferred software and workflow
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-dental-blue rounded-full mt-3 mr-3 flex-shrink-0"></span>
-                  Flexible financing options for all budgets
+                  Dedicated account managers for personalized service
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-dental-blue rounded-full mt-3 mr-3 flex-shrink-0"></span>
-                  Comprehensive care under one roof
+                  Scalable design capacity for peak demand
                 </li>
               </ul>
             </div>
@@ -135,16 +137,17 @@ const About = () => {
       <section className="dental-section bg-dental-light-gray">
         <div className="dental-container text-center">
           <h2 className="text-3xl font-bold text-dental-blue mb-6">
-            Ready to Experience the Difference?
+            Ready to Scale Your Design Capacity?
           </h2>
           <p className="text-xl text-dental-gray mb-8 max-w-2xl mx-auto">
-            Join over 1 million patients who have trusted us with their dental care.
+            Join hundreds of dental professionals who trust us to deliver accurate, on-time designs — every time.
           </p>
           <Button size="lg" className="dental-button-primary">
-            Schedule Your Appointment
+            Schedule Your Design Consultation
           </Button>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

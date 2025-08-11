@@ -56,19 +56,19 @@ const Hero = () => {
             </div>
 
             {/* Hero Video - Full Width in Large Screens */}
-           {/* Right Side Video */}
-<div className="lg:pl-8 w-full">
-  <div className="relative rounded-2xl overflow-hidden shadow-xl max-w-none">
-    <video
-      src={heroVideo}
-      className="w-full h-[300px] sm:h-[500px] lg:h-[650px] object-cover"
-      autoPlay
-      loop
-      muted
-      playsInline
-    />
-  </div>
-</div>
+            {/* Right Side Video */}
+            <div className="lg:pl-8 w-full">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl max-w-none">
+                <video
+                  src={heroVideo}
+                  className="w-full h-[300px] sm:h-[500px] lg:h-[650px] object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+            </div>
 
           </div>
         </div>

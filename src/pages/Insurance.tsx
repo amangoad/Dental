@@ -1,42 +1,45 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, CreditCard, Shield, Calculator } from "lucide-react";
+import { CheckCircle, Clock, Cpu, Layers } from "lucide-react";
 
 const Insurance = () => {
-  const insuranceProviders = [
-    "Aetna", "Blue Cross Blue Shield", "Cigna", "Delta Dental", "Humana", 
-    "MetLife", "UnitedHealthcare", "Guardian", "Principal", "Anthem"
-  ];
-
-  const financingOptions = [
+  const expertiseHighlights = [
     {
-      title: "AspenDental Credit Card",
-      description: "Special financing for dental treatments",
-      features: ["0% APR for 6-24 months", "No annual fee", "Easy application"],
-      icon: CreditCard
+      title: "Precision & Accuracy",
+      description: "Every design is crafted with meticulous attention to detail, ensuring perfect fit and flawless aesthetics.",
+      features: ["Micron-level accuracy", "Strict quality control", "Expert dental designers"],
+      icon: CheckCircle
     },
     {
-      title: "Payment Plans",
-      description: "Flexible monthly payment options",
-      features: ["Low monthly payments", "No credit check required", "Instant approval"],
-      icon: Calculator
+      title: "Fast Turnaround",
+      description: "We deliver designs in record time without compromising quality, helping you meet tight deadlines.",
+      features: ["24–48 hour delivery", "Rush orders available", "Streamlined workflow"],
+      icon: Clock
     },
     {
-      title: "Insurance Maximization",
-      description: "Get the most from your dental benefits",
-      features: ["Benefits verification", "Pre-authorization help", "Claim assistance"],
-      icon: Shield
+      title: "Fully Customized",
+      description: "Designs tailored to your specific requirements, patient needs, and preferred workflows.",
+      features: ["Custom shade matching", "Preferred material support", "Flexible file formats"],
+      icon: Layers
     }
   ];
 
-  const treatmentCosts = [
-    { service: "Routine Cleaning", withInsurance: "$25-50", withoutInsurance: "$75-150" },
-    { service: "Basic Filling", withInsurance: "$50-100", withoutInsurance: "$150-300" },
-    { service: "Root Canal", withInsurance: "$300-500", withoutInsurance: "$800-1,500" },
-    { service: "Crown", withInsurance: "$200-400", withoutInsurance: "$600-1,200" },
-    { service: "Dentures (Full Set)", withInsurance: "$400-800", withoutInsurance: "$1,200-3,000" },
-    { service: "Dental Implant", withInsurance: "$500-1,000", withoutInsurance: "$1,500-4,000" }
+  const technologyShowcase = [
+    "CAD/CAM Precision Design",
+    "3D Printing Ready Files",
+    "Digital Smile Design Integration",
+    "Cloud-Based File Transfer",
+    "AI-Powered Occlusion Analysis"
+  ];
+
+  const comparisonData = [
+    { factor: "Turnaround Time", outsourcing: "24–48 hrs", traditional: "5–10 days" },
+    { factor: "Design Accuracy", outsourcing: "High (CAD verified)", traditional: "Variable" },
+    { factor: "Scalability", outsourcing: "Unlimited capacity", traditional: "Limited by lab size" },
+    { factor: "Cost Efficiency", outsourcing: "Up to 50% savings", traditional: "Higher fixed costs" },
+    { factor: "File Delivery", outsourcing: "Digital, instant", traditional: "Physical models" }
   ];
 
   return (
@@ -47,80 +50,46 @@ const Insurance = () => {
       <section className="bg-dental-light-gray py-16">
         <div className="dental-container text-center">
           <h1 className="text-dental-blue mb-6">
-            Dental Insurance & Financing
+            Why Choose Our Dental Design Outsourcing?
           </h1>
           <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
-            We make dental care affordable for everyone. With insurance acceptance, 
-            flexible financing, and payment plans, there's always a way to get the care you need.
+            We provide world-class dental design services to help labs and clinics 
+            deliver outstanding results — faster, more accurately, and more cost-effectively.
           </p>
         </div>
       </section>
 
-      {/* Insurance Acceptance */}
+      {/* Expertise Section */}
       <section className="dental-section bg-white">
         <div className="dental-container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-dental-blue mb-6">
-              We Accept Most Insurance Plans
+              Our Expertise
             </h2>
             <p className="text-xl text-dental-gray max-w-2xl mx-auto">
-              We work with hundreds of insurance providers to maximize your benefits 
-              and minimize your out-of-pocket costs.
+              From crowns to complex implant cases, our skilled designers deliver consistent quality for every case.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
-            {insuranceProviders.map((provider, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="p-6">
-                  <div className="bg-dental-light-gray w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Shield className="w-8 h-8 text-dental-blue" />
-                  </div>
-                  <h3 className="font-semibold text-dental-blue">{provider}</h3>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <p className="text-dental-gray mb-4">
-              Don't see your insurance provider? No problem!
-            </p>
-            <Button className="dental-button-primary">
-              Verify Your Benefits
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Financing Options */}
-      <section className="dental-section bg-dental-light-gray">
-        <div className="dental-container">
-          <h2 className="text-3xl font-bold text-dental-blue text-center mb-12">
-            Flexible Financing Options
-          </h2>
           <div className="grid lg:grid-cols-3 gap-8">
-            {financingOptions.map((option, index) => (
+            {expertiseHighlights.map((item, index) => (
               <Card key={index} className="dental-card">
                 <CardContent className="p-6 text-center">
-                  <option.icon className="w-12 h-12 text-dental-blue mx-auto mb-4" />
+                  <item.icon className="w-12 h-12 text-dental-blue mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-dental-blue mb-3">
-                    {option.title}
+                    {item.title}
                   </h3>
                   <p className="text-dental-gray mb-6">
-                    {option.description}
+                    {item.description}
                   </p>
-                  <ul className="space-y-2 mb-6">
-                    {option.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center justify-center text-sm text-dental-gray">
+                  <ul className="space-y-2">
+                    {item.features.map((feature, i) => (
+                      <li key={i} className="flex items-center justify-center text-sm text-dental-gray">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="dental-button-outline">
-                    Learn More
-                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -128,66 +97,80 @@ const Insurance = () => {
         </div>
       </section>
 
-      {/* Cost Comparison */}
+      {/* Technology Section */}
+      <section className="dental-section bg-dental-light-gray">
+        <div className="dental-container">
+          <h2 className="text-3xl font-bold text-dental-blue text-center mb-12">
+            Cutting-Edge Technology
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+            {technologyShowcase.map((tech, index) => (
+              <Card key={index} className="text-center">
+                <CardContent className="p-6">
+                  <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Cpu className="w-8 h-8 text-dental-blue" />
+                  </div>
+                  <h3 className="font-semibold text-dental-blue">{tech}</h3>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
       <section className="dental-section bg-white">
         <div className="dental-container">
           <h2 className="text-3xl font-bold text-dental-blue text-center mb-12">
-            Treatment Cost Comparison
+            Why We Outperform Traditional Labs
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-dental-light-gray">
-                    <th className="text-left p-4 font-bold text-dental-blue">Treatment</th>
-                    <th className="text-left p-4 font-bold text-dental-blue">With Insurance*</th>
-                    <th className="text-left p-4 font-bold text-dental-blue">Without Insurance</th>
+                    <th className="text-left p-4 font-bold text-dental-blue">Factor</th>
+                    <th className="text-left p-4 font-bold text-dental-blue">Our Outsourcing</th>
+                    <th className="text-left p-4 font-bold text-dental-blue">Traditional Labs</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {treatmentCosts.map((treatment, index) => (
+                  {comparisonData.map((row, index) => (
                     <tr key={index} className="border-b border-gray-200">
-                      <td className="p-4 font-medium text-dental-blue">{treatment.service}</td>
-                      <td className="p-4 text-green-600 font-semibold">{treatment.withInsurance}</td>
-                      <td className="p-4 text-dental-gray">{treatment.withoutInsurance}</td>
+                      <td className="p-4 font-medium text-dental-blue">{row.factor}</td>
+                      <td className="p-4 text-green-600 font-semibold">{row.outsourcing}</td>
+                      <td className="p-4 text-dental-gray">{row.traditional}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-muted-foreground mt-4 text-center">
-              *Costs shown are estimates with typical insurance coverage. Actual costs may vary based on your specific plan and treatment needs.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Special Offers */}
+      {/* Special Offer */}
       <section className="dental-section bg-dental-blue">
         <div className="dental-container text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
-            Limited Time Offer
+            Limited Time Offer for New Clients
           </h2>
           <div className="bg-white/10 rounded-2xl p-8 max-w-2xl mx-auto mb-8">
             <h3 className="text-2xl font-bold text-white mb-4">
-              25% Off Your Treatment Plan
+              20% Off Your First 10 Cases
             </h3>
             <p className="text-white/90 mb-6">
-              New patients can save 25% on their comprehensive treatment plan. 
-              This offer can be combined with insurance benefits for maximum savings.
+              Experience our service at a discounted rate — perfect for labs looking to scale without extra overhead.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-dental-blue">
-                Schedule Consultation
+                Get Started
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-dental-blue">
-                Check Benefits
+                Book a Demo
               </Button>
             </div>
           </div>
-          <p className="text-xs text-white/70 max-w-3xl mx-auto">
-            Offer available in select offices. Not valid for previous or ongoing work and cannot be combined with other discounts or dental discount programs. Not valid for orthodontia. Discount taken off usual and customary fees for general dentistry services and does not apply to services rendered by a specialist. Patients with insurance will receive either the 25% discount or insurance plan pricing, whichever discount is greater. Offer expires 12/31/25.
-          </p>
         </div>
       </section>
 
@@ -195,52 +178,54 @@ const Insurance = () => {
       <section className="dental-section bg-dental-light-gray">
         <div className="dental-container">
           <h2 className="text-3xl font-bold text-dental-blue text-center mb-12">
-            Insurance & Financing FAQs
+            FAQs About Our Outsourcing
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="dental-card">
               <CardContent className="p-6">
                 <h3 className="font-bold text-dental-blue mb-3">
-                  How do I know if my insurance is accepted?
+                  How quickly can I receive my designs?
                 </h3>
                 <p className="text-dental-gray text-sm">
-                  We accept most major insurance plans. Call us or use our online verification tool to check your specific benefits and coverage.
+                  Most designs are delivered within 24–48 hours. Rush orders can be completed in less than 12 hours.
                 </p>
               </CardContent>
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
                 <h3 className="font-bold text-dental-blue mb-3">
-                  Can I use financing if I have insurance?
+                  What file formats do you support?
                 </h3>
                 <p className="text-dental-gray text-sm">
-                  Yes! You can use financing options to cover your portion after insurance pays their part, making treatment even more affordable.
+                  We work with all major dental CAD formats including STL, PLY, and OBJ.
                 </p>
               </CardContent>
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
                 <h3 className="font-bold text-dental-blue mb-3">
-                  What if I don't have dental insurance?
+                  Do you offer trial cases?
                 </h3>
                 <p className="text-dental-gray text-sm">
-                  No problem! We offer multiple financing options and payment plans to make dental care accessible regardless of insurance status.
+                  Yes! New clients can request sample designs to test our workflow and quality before committing.
                 </p>
               </CardContent>
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
                 <h3 className="font-bold text-dental-blue mb-3">
-                  How quickly can I get approved for financing?
+                  Can you handle large case volumes?
                 </h3>
                 <p className="text-dental-gray text-sm">
-                  Our financing applications typically provide instant approval, so you can start treatment the same day as your consultation.
+                  Absolutely. Our scalable team and cloud-based workflow allow us to handle unlimited design orders.
                 </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

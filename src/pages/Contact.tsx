@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,37 +11,37 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      description: "Speak with our friendly team",
-      contact: "(800) 277-3633",
+      description: "Talk directly with our design coordination team",
+      contact: "+1 (800) 277-3633",
       action: "Call Now"
     },
-    {
-      icon: MessageCircle,
-      title: "Live Chat",
-      description: "Chat with us online",
-      contact: "Available 24/7",
-      action: "Start Chat"
-    },
+    // {
+    //   icon: MessageCircle,
+    //   title: "Live Chat",
+    //   description: "Get instant answers from our project managers",
+    //   contact: "Available 24/7",
+    //   action: "Start Chat"
+    // },
     {
       icon: Mail,
       title: "Email Us",
-      description: "Send us a message",
-      contact: "info@aspendental.com",
+      description: "Send design files or inquiries",
+      contact: "info@dentsmiledesign.com",
       action: "Send Email"
     },
     {
       icon: Calendar,
-      title: "Schedule Online",
-      description: "Book your appointment",
-      contact: "Available 24/7",
-      action: "Schedule Now"
+      title: "Book a Demo",
+      description: "Schedule a consultation with our design team",
+      contact: "Flexible booking times",
+      action: "Book Now"
     }
   ];
 
   const officeHours = [
-    { day: "Monday - Friday", hours: "7:00 AM - 7:00 PM" },
-    { day: "Saturday", hours: "7:00 AM - 4:00 PM" },
-    { day: "Sunday", hours: "Closed (Emergency care available)" }
+    { day: "Monday - Friday", hours: "8:00 AM - 8:00 PM (EST)" },
+    { day: "Saturday", hours: "9:00 AM - 5:00 PM (EST)" },
+    { day: "Sunday", hours: "Closed" }
   ];
 
   return (
@@ -50,45 +51,47 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-dental-light-gray py-16">
         <div className="dental-container text-center">
-          <h1 className="text-dental-blue mb-6">
-            Contact AspenDental
+          <h1 className="text-dental-blue text-5xl mb-6 font-bold">
+            Contact 
           </h1>
           <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
-            Have questions about our services or need to schedule an appointment? 
-            We're here to help! Contact us today and let's get you on the path to better oral health.
+            Need help with a case, project, or design file? Our team of skilled dental designers is ready to assist. 
+            Reach out today and let’s bring your vision to life.
           </p>
         </div>
       </section>
 
-      {/* Contact Methods */}
-      <section className="dental-section bg-white">
-        <div className="dental-container">
-          <h2 className="text-3xl font-bold text-dental-blue text-center mb-12">
-            Get in Touch
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {contactMethods.map((method, index) => (
-              <Card key={index} className="dental-card text-center group cursor-pointer">
-                <CardContent className="p-6">
-                  <method.icon className="w-12 h-12 text-dental-blue mx-auto mb-4" />
-                  <h3 className="text-xl font-bold text-dental-blue mb-2 group-hover:text-primary-hover transition-colors">
-                    {method.title}
-                  </h3>
-                  <p className="text-dental-gray mb-4">
-                    {method.description}
-                  </p>
-                  <p className="font-semibold text-dental-blue mb-4">
-                    {method.contact}
-                  </p>
-                  <Button size="sm" className="dental-button-primary">
-                    {method.action}
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+   {/* Contact Methods */}
+<section className="dental-section bg-white">
+  <div className="dental-container">
+    <h2 className="text-3xl font-bold text-dental-blue text-center mb-12">
+      Get in Touch
+    </h2>
+    <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      {contactMethods.map((method, index) => (
+        <Card
+          key={index}
+          className="dental-card text-center group cursor-pointer"
+        >
+          <CardContent className="p-6">
+            <method.icon className="w-12 h-12 text-dental-blue mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-dental-blue mb-2 group-hover:text-primary-hover transition-colors">
+              {method.title}
+            </h3>
+            <p className="text-dental-gray mb-4">{method.description}</p>
+            <p className="font-semibold text-dental-blue mb-4">
+              {method.contact}
+            </p>
+            <Button size="sm" className="dental-button-primary">
+              {method.action}
+            </Button>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Form & Info */}
       <section className="dental-section bg-dental-light-gray">
@@ -127,14 +130,14 @@ const Contact = () => {
                     <label className="block text-sm font-medium text-dental-blue mb-2">
                       Phone Number
                     </label>
-                    <Input type="tel" placeholder="(555) 123-4567" />
+                    <Input type="tel" placeholder="+1 555 123 4567" />
                   </div>
                   
                   <div>
                     <label className="block text-sm font-medium text-dental-blue mb-2">
-                      Preferred Location
+                      Project / Case Reference
                     </label>
-                    <Input placeholder="City, State or ZIP code" />
+                    <Input placeholder="Case ID or brief project title" />
                   </div>
                   
                   <div>
@@ -142,7 +145,7 @@ const Contact = () => {
                       How can we help you? *
                     </label>
                     <Textarea 
-                      placeholder="Tell us about your dental needs or questions..."
+                      placeholder="Tell us about your dental design needs or questions..."
                       className="min-h-[120px]"
                     />
                   </div>
@@ -154,27 +157,8 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Contact Information */}
+            {/* Office Info */}
             <div className="space-y-8">
-              {/* Emergency Contact */}
-              <Card className="dental-card bg-red-50 border-red-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <Phone className="w-6 h-6 text-red-600 mr-3" />
-                    <h3 className="text-xl font-bold text-red-600">
-                      Dental Emergency?
-                    </h3>
-                  </div>
-                  <p className="text-dental-gray mb-4">
-                    If you're experiencing severe tooth pain, swelling, or other dental emergencies, 
-                    call us immediately for same-day care.
-                  </p>
-                  <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
-                    Call Emergency Line: (800) 277-3633
-                  </Button>
-                </CardContent>
-              </Card>
-
               {/* Office Hours */}
               <Card className="dental-card">
                 <CardContent className="p-6">
@@ -195,7 +179,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              {/* General Information */}
+              {/* Company Info */}
               <Card className="dental-card">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-dental-blue mb-4">
@@ -205,22 +189,22 @@ const Contact = () => {
                     <div className="flex items-start">
                       <MapPin className="w-5 h-5 text-dental-blue mt-1 mr-3 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-dental-blue">900+ Locations</p>
-                        <p className="text-dental-gray text-sm">Nationwide coverage for your convenience</p>
+                        <p className="font-medium text-dental-blue">Global Service</p>
+                        <p className="text-dental-gray text-sm">Serving dental labs and clinics worldwide</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Calendar className="w-5 h-5 text-dental-blue mt-1 mr-3 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-dental-blue">Same-Day Appointments</p>
-                        <p className="text-dental-gray text-sm">Emergency and consultation appointments available</p>
+                        <p className="font-medium text-dental-blue">Fast Turnaround</p>
+                        <p className="text-dental-gray text-sm">Average delivery within 24–48 hours</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Phone className="w-5 h-5 text-dental-blue mt-1 mr-3 flex-shrink-0" />
                       <div>
-                        <p className="font-medium text-dental-blue">24/7 Support</p>
-                        <p className="text-dental-gray text-sm">Online scheduling and customer service</p>
+                        <p className="font-medium text-dental-blue">Dedicated Support</p>
+                        <p className="text-dental-gray text-sm">Project managers assigned to every client</p>
                       </div>
                     </div>
                   </div>
@@ -241,44 +225,42 @@ const Contact = () => {
             <Card className="dental-card">
               <CardContent className="p-6">
                 <h3 className="font-bold text-dental-blue mb-3">
-                  How do I schedule an appointment?
+                  What file formats do you accept?
                 </h3>
                 <p className="text-dental-gray text-sm">
-                  You can schedule online 24/7, call us at (800) 277-3633, or use our live chat feature. 
-                  Same-day appointments are often available.
+                  We accept STL, PLY, OBJ, and other common dental CAD formats. 
+                  Contact us for custom requirements.
                 </p>
               </CardContent>
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
                 <h3 className="font-bold text-dental-blue mb-3">
-                  Do you accept my insurance?
+                  How fast is your turnaround?
                 </h3>
                 <p className="text-dental-gray text-sm">
-                  We accept most major insurance plans. Call us or use our online tool to verify 
-                  your specific benefits and coverage.
+                  Most single-unit cases are delivered within 24–48 hours. 
+                  Complex projects may require additional time.
                 </p>
               </CardContent>
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
                 <h3 className="font-bold text-dental-blue mb-3">
-                  What should I bring to my appointment?
+                  Do you offer trial projects?
                 </h3>
                 <p className="text-dental-gray text-sm">
-                  Bring a valid ID, insurance card (if applicable), list of medications, 
-                  and any relevant dental records from previous treatments.
+                  Yes, we offer sample cases so you can evaluate our quality and service before committing.
                 </p>
               </CardContent>
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
                 <h3 className="font-bold text-dental-blue mb-3">
-                  Do you offer payment plans?
+                  Is my data secure?
                 </h3>
                 <p className="text-dental-gray text-sm">
-                  Yes! We offer flexible financing options and payment plans to make 
-                  dental care affordable for everyone, regardless of insurance status.
+                  Absolutely — we use secure file transfer protocols and strict confidentiality agreements for all client data.
                 </p>
               </CardContent>
             </Card>
@@ -286,26 +268,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="dental-section bg-dental-blue">
-        <div className="dental-container text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Don't wait to get the dental care you deserve. Contact us today 
-            and take the first step toward a healthier, more confident smile.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-dental-blue">
-              Schedule Appointment
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-dental-blue">
-              Call (800) 277-3633
-            </Button>
-          </div>
-        </div>
-      </section>
+      <Footer/>
     </div>
   );
 };
