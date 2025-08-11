@@ -56,7 +56,7 @@ const Header = () => {
             {/* Desktop CTA */}
             <div className="hidden md:block">
               <Button className="dental-button-primary ml-4">
-                Schedule appointment
+                Send Cases
               </Button>
             </div>
           </div>
