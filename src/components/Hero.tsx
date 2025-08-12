@@ -96,52 +96,53 @@ const Hero = () => {
 
      {/* MISSION SECTION */}
 <section
-  className="dental-section bg-fixed bg-center bg-cover"
+  className="relative dental-section bg-fixed bg-center bg-cover"
   style={{
-    backgroundImage: "url('https://styles.prosites.com/customs/2285/290690/images/panel1.jpg')",
+    backgroundImage:
+      "url('https://styles.prosites.com/customs/2285/290690/images/panel1.jpg')",
   }}
 >
-<div
-  className="dental-container bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8"
-  style={{ backgroundColor: "rgb(227 230 255 / 44%)" }}
->
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-    <div>
-      <h2 className="text-5xl  sm:text-3xl font-bold text-dental-blue mb-4 sm:mb-6">
-        Our Mission
-      </h2>
-      <p className="text-base sm:text-lg text-dental-gray mb-4 sm:mb-6 leading-relaxed">
-        We exist to support dental labs with precision and innovation. Our mission is to deliver reliable, high-quality dental design services while building trust and lasting partnerships with our clients.
-        Every lab that works with our team receives personalized designs and solutions tailored to their unique requirements and production goals.
-      </p>
-    </div>
-    <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg">
-      <h3 className="text-xl sm:text-2xl font-bold text-dental-blue mb-3 sm:mb-4">
-        What Sets Us Apart
-      </h3>
-      <ul className="space-y-2 sm:space-y-3 text-dental-gray">
-        <li className="flex items-start">
-          <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          Same-day design delivery options available
-        </li>
-        <li className="flex items-start">
-          <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          Expert CAD/CAM technicians for faster turnarounds
-        </li>
-        <li className="flex items-start">
-          <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          Flexible outsourcing packages for all budgets
-        </li>
-        <li className="flex items-start">
-          <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-          Comprehensive dental design solutions under one roof
-        </li>
-      </ul>
+  {/* Black transparent overlay */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  <div className="relative dental-container bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div>
+        <h2 className="text-5xl sm:text-3xl font-bold text-dental-blue mb-4 sm:mb-6">
+          Our Mission
+        </h2>
+        <p className="text-base sm:text-lg text-dental-gray mb-4 sm:mb-6 leading-relaxed">
+          We exist to support dental labs with precision and innovation. Our mission is to deliver reliable, high-quality dental design services while building trust and lasting partnerships with our clients.
+          Every lab that works with our team receives personalized designs and solutions tailored to their unique requirements and production goals.
+        </p>
+      </div>
+      <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg">
+        <h3 className="text-xl sm:text-2xl font-bold text-dental-blue mb-3 sm:mb-4">
+          What Sets Us Apart
+        </h3>
+        <ul className="space-y-2 sm:space-y-3 text-dental-gray">
+          <li className="flex items-start">
+            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            Same-day design delivery options available
+          </li>
+          <li className="flex items-start">
+            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            Expert CAD/CAM technicians for faster turnarounds
+          </li>
+          <li className="flex items-start">
+            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            Flexible outsourcing packages for all budgets
+          </li>
+          <li className="flex items-start">
+            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            Comprehensive dental design solutions under one roof
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-
 </section>
+
 
 
       {/* VALUES SECTION */}
@@ -169,29 +170,47 @@ const Hero = () => {
 
       {/* CTA SECTION */}
    {/* Special Offer */}
-         <section className="dental-section bg-dental-blue">
-           <div className="dental-container text-center">
-             <h2 className="text-3xl font-bold text-white mb-6">
-               Limited Time Offer for New Clients
-             </h2>
-             <div className="bg-white/10 rounded-2xl p-8 max-w-2xl mx-auto mb-8">
-               <h3 className="text-2xl font-bold text-white mb-4">
-                 20% Off Your First 10 Cases
-               </h3>
-               <p className="text-white/90 mb-6">
-                 Experience our service at a discounted rate — perfect for labs looking to scale without extra overhead.
-               </p>
-               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                 <Button size="lg" variant="outline" className="border-white text-dental-blue hover:bg-white hover:text-dental-blue">
-                   Get Started
-                 </Button>
-                 <Button size="lg" variant="outline" className="border-white text-dental-blue hover:bg-white hover:text-dental-blue">
-                   Book a Demo
-                 </Button>
-               </div>
-             </div>
-           </div>
-         </section>
+<section
+  className="relative dental-section bg-fixed bg-center bg-cover"
+  style={{
+    backgroundImage: "url('/background.png')", // Replace with your background image
+  }}
+>
+  {/* Dark transparent overlay */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative dental-container text-center">
+    <h2 className="text-3xl font-bold text-white mb-6">
+      Limited Time Offer for New Clients
+    </h2>
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto mb-8">
+      <h3 className="text-2xl font-bold text-white mb-4">
+        20% Off Your First 10 Cases
+      </h3>
+      <p className="text-white/90 mb-6">
+        Experience our service at a discounted rate — perfect for labs looking to scale without extra overhead.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button
+          size="lg"
+          variant="outline"
+          className="border-white text-dental-blue hover:bg-white hover:text-dental-blue"
+        >
+          Get Started
+        </Button>
+        <Button
+          size="lg"
+          variant="outline"
+          className="border-white text-dental-blue hover:bg-white hover:text-dental-blue"
+        >
+          Book a Demo
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
            {/* FAQ Section */}
       <section className="dental-section bg-white">
         <div className="dental-container">
