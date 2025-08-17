@@ -102,9 +102,6 @@ const Home = () => {
         </div>
       </section>
 
-<<<<<<< HEAD
-      {/* ✅ STATS SECTION */}
-=======
 {/* STATS SECTION */}
 <section className="dental-section bg-white shadow-md hover:shadow-2xl transition-shadow duration-300 rounded-2xl">
   <div className="dental-container">
@@ -177,7 +174,6 @@ const Home = () => {
 
 
       {/* VALUES SECTION */}
->>>>>>> f7a6354a499164f24df729a29c06c6cd449549e0
       <section className="dental-section bg-white">
         <div className="dental-container grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -284,23 +280,6 @@ const Home = () => {
         </div>
       </section>
 
-<<<<<<< HEAD
-{/* ✅ SERVICES SECTION */}
-<Services />
-
-
-      {/* ✅ CTA SECTION */}
-      <section className="dental-section bg-dental-blue text-center">
-        <motion.div
-          className="dental-container"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to Scale Your Design Capacity?
-=======
       {/* CTA SECTION */}
    {/* Special Offer */}
 <section
@@ -349,7 +328,6 @@ const Home = () => {
         <div className="dental-container">
           <h2 className="text-5xl font-bold text-dental-blue text-center mb-12">
             Frequently Asked Questions
->>>>>>> f7a6354a499164f24df729a29c06c6cd449549e0
           </h2>
           <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Join hundreds of dental professionals who trust us to deliver
