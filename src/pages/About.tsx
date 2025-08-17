@@ -36,12 +36,12 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-dental-light-gray py-16">
+      <section className="bg-dental-blue py-16">
         <div className="dental-container text-center">
-          <h1 className="text-dental-blue text-5xl mb-6 font-bold">
+          <h1 className="text-white text-5xl mb-6 font-bold">
             About 
           </h1>
-          <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             For over 15 years, we've been partnering with dental labs and offices worldwide,
             delivering precision CAD/CAM designs with speed and reliability. From crowns and bridges
             to full-mouth reconstructions, we help you scale your workflow without sacrificing quality.

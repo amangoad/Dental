@@ -57,12 +57,12 @@ const Services = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-dental-light-gray py-16">
+      <section className="bg-dental-blue py-16">
         <div className="dental-container text-center">
-          <h1 className="text-dental-blue mb-6 text-5xl font-bold">
+          <h1 className="text-white mb-6 text-5xl font-bold">
             Design Services
           </h1>
-          <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             From precision digital restorations to complete smile transformations,
             our outsourcing solutions empower dental practices and labs to deliver
             exceptional results with speed, accuracy, and consistency.

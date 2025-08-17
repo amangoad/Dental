@@ -46,12 +46,12 @@ const Locations = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-dental-light-gray py-16">
+      <section className="bg-dental-blue py-16">
         <div className="dental-container text-center">
-          <h1 className="text-dental-blue mb-6 text-5xl font-bold">
+          <h1 className="text-white mb-6 text-5xl font-bold">
             Global Reach
           </h1>
-          <p className="text-xl text-dental-gray max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-xl text-white max-w-3xl mx-auto mb-8 leading-relaxed">
             With design hubs strategically located worldwide, we deliver fast, precise,
             and high-quality dental CAD designs wherever you are.
           </p>
@@ -62,7 +62,7 @@ const Locations = () => {
               placeholder="Search by city or country"
               className="flex-1"
             />
-            <Button className="dental-button-primary">
+            <Button className="dental-button background-white">
               Search
             </Button>
           </div>

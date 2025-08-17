@@ -49,12 +49,12 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-dental-light-gray py-16">
+      <section className="bg-dental-blue py-16">
         <div className="dental-container text-center">
-          <h1 className="text-dental-blue text-5xl mb-6 font-bold">
+          <h1 className="text-white text-5xl mb-6 font-bold">
             Contact 
           </h1>
-          <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             Need help with a case, project, or design file? Our team of skilled dental designers is ready to assist. 
             Reach out today and let’s bring your vision to life.
           </p>
