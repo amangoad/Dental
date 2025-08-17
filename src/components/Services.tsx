@@ -43,11 +43,11 @@ const Services = () => {
                   <p className="text-dental-gray mb-6 leading-relaxed">
                     {service.description}
                   </p>
-<Button
-  className="bg-dental-blue text-white hover:bg-primary-hover font-medium mt-auto self-start"
->
-  Learn more
-</Button>
+                  <Button
+                    className="bg-dental-blue text-white hover:bg-primary-hover font-medium mt-auto self-start"
+                  >
+                    Learn more
+                  </Button>
 
 
                 </CardContent>

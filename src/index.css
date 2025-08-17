@@ -1,92 +1,114 @@
-/* Existing Inter font */
+/* ---------------------- */
+/* Google Font: Inter     */
+/* ---------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Define Tiempos Headline (400) - Keeping .otf as before */
+/* ---------------------- */
+/* Tiempos Headline Fonts */
+/* ---------------------- */
 @font-face {
   font-family: 'Tiempos Headline';
-  src: url('/src/assets/fonts/TiemposHeadline/TiemposHeadline-Regular.otf') format('opentype');
+  src: url('/fonts/TiemposHeadline/TiemposHeadline-Regular.woff2') format('woff2'),
+       url('/fonts/TiemposHeadline/TiemposHeadline-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Define Messina Sans (600) with multiple formats */
 @font-face {
-  font-family: 'Messina Sans';
-  src: url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.eot'); /* IE6-IE8 */
-  src: url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE9 Compatibility Mode */
-       url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.woff2') format('woff2'), /* Modern browsers - Include if you have .woff2 */
-       url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.woff') format('woff'), /* Wide support */
-       url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/src/assets/fonts/MessinaSans/MessinaSans-SemiBold.svg#MessinaSans') format('svg'); /* Legacy iOS - Include if you have .svg */
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/TiemposHeadline/TiemposHeadline-SemiBold.woff2') format('woff2'),
+       url('/fonts/TiemposHeadline/TiemposHeadline-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('/fonts/TiemposHeadline/TiemposHeadline-Bold.woff2') format('woff2'),
+       url('/fonts/TiemposHeadline/TiemposHeadline-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -------------------- */
+/* Messina Sans Fonts   */
+/* -------------------- */
+@font-face {
+  font-family: 'Messina Sans';
+  src: url('/fonts/MessinaSans/MessinaSans-Regular.woff2') format('woff2'),
+       url('/fonts/MessinaSans/MessinaSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Messina Sans';
+  src: url('/fonts/MessinaSans/MessinaSans-SemiBold.woff2') format('woff2'),
+       url('/fonts/MessinaSans/MessinaSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Messina Sans';
+  src: url('/fonts/MessinaSans/MessinaSans-Bold.woff2') format('woff2'),
+       url('/fonts/MessinaSans/MessinaSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -------------------- */
+/* Tailwind Base + Utils*/
+/* -------------------- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Aspen Dental-inspired design system */
-
+/* ---------------------- */
+/* Aspen Dental Design System */
+/* ---------------------- */
 @layer base {
   :root {
-    /* Aspen Dental blue color scheme */
     --background: 0 0% 100%;
     --foreground: 210 9% 31%;
-
     --card: 0 0% 100%;
     --card-foreground: 210 9% 31%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 210 9% 31%;
-
-    /* Primary blue - Aspen Dental brand color */
     --primary: 215 85% 27%;
     --primary-foreground: 0 0% 100%;
     --primary-hover: 215 85% 32%;
-
     --secondary: 210 40% 96%;
     --secondary-foreground: 210 9% 31%;
-
     --muted: 210 40% 98%;
     --muted-foreground: 215 20% 65%;
-
     --accent: 210 40% 96%;
     --accent-foreground: 210 9% 31%;
-
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-
     --border: 220 13% 91%;
     --input: 220 13% 91%;
     --ring: 215 85% 27%;
-
-    /* Dental-specific colors */
     --dental-blue: 215 85% 27%;
     --dental-light-blue: 215 85% 92%;
     --dental-gray: 210 9% 31%;
     --dental-light-gray: 210 11% 96%;
-    
-    /* Success/health green */
     --success: 142 71% 45%;
     --success-foreground: 0 0% 100%;
-
     --radius: 0.5rem;
-
-    /* Shadows for depth */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-
-    /* Transitions */
     --transition-base: all 0.2s ease-in-out;
     --transition-slow: all 0.3s ease-in-out;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -97,15 +119,29 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight;
+  /* ------------------- */
+  /* Headings + Text     */
+  /* ------------------- */
+  h1 {
     font-family: 'Tiempos Headline', serif;
-    font-weight: 400;
+    font-weight: 400; /* Regular */
+    @apply tracking-tight;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Tiempos Headline', serif;
+    font-weight: 600; /* SemiBold */
+    @apply tracking-tight;
+  }
+
+  strong, b {
+    font-family: 'Tiempos Headline', serif;
+    font-weight: 600; /* Bold */
   }
 
   p {
     font-family: 'Messina Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 400; /* Regular */
   }
 }
 

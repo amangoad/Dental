@@ -58,25 +58,24 @@ const Services = () => {
 
       {/* Hero Section */}
       <section className="bg-dental-light-gray py-16">
-  <div className="dental-container text-center">
-    <h1 className="text-dental-blue mb-6 text-5xl font-bold">
-   Design Services
-    </h1>
-    <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
-      From precision digital restorations to complete smile transformations,
-      our outsourcing solutions empower dental practices and labs to deliver
-      exceptional results with speed, accuracy, and consistency.
-    </p>
-  </div>
-</section>
+        <div className="dental-container text-center">
+          <h1 className="text-dental-blue mb-6 text-5xl font-bold">
+            Design Services
+          </h1>
+          <p className="text-xl text-dental-gray max-w-3xl mx-auto leading-relaxed">
+            From precision digital restorations to complete smile transformations,
+            our outsourcing solutions empower dental practices and labs to deliver
+            exceptional results with speed, accuracy, and consistency.
+          </p>
+        </div>
+      </section>
 
       {/* Services Section */}
       {serviceCategories.map((category, categoryIndex) => (
         <section
           key={categoryIndex}
-          className={`dental-section ${
-            categoryIndex % 2 === 0 ? "bg-white" : "bg-dental-light-gray"
-          }`}
+          className={`dental-section ${categoryIndex % 2 === 0 ? "bg-white" : "bg-dental-light-gray"
+            }`}
         >
           <div className="dental-container">
             <h2 className="text-3xl font-bold text-dental-blue text-center mb-12">

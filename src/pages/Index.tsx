@@ -9,7 +9,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <ChatWidget />
       <Footer /> {/* ✅ Correct component */}
     </div>
