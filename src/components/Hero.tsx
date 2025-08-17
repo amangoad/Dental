@@ -102,75 +102,6 @@ const Home = () => {
         </div>
       </section>
 
-{/* STATS SECTION */}
-<section className="dental-section bg-white shadow-md hover:shadow-2xl transition-shadow duration-300 rounded-2xl">
-  <div className="dental-container">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-      {stats.map((stat, index) => (
-        <Card key={index} className="text-center">
-          <CardContent className="p-6">
-            <stat.icon className="w-10 h-10 sm:w-12 sm:h-12 text-dental-blue mx-auto mb-3 sm:mb-4" />
-            <div className="text-2xl sm:text-3xl font-bold text-dental-blue mb-1 sm:mb-2">
-              {stat.number}
-            </div>
-            <p className="text-sm sm:text-base text-dental-gray">{stat.label}</p>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-     {/* MISSION SECTION */}
-<section
-  className="relative dental-section bg-fixed bg-center bg-cover"
-  style={{
-    backgroundImage:
-      "url('https://styles.prosites.com/customs/2285/290690/images/panel1.jpg')",
-  }}
->
-  {/* Black transparent overlay */}
-  <div className="absolute inset-0 bg-black/50"></div>
-
-  <div className="relative dental-container bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-      <div>
-        <h2 className="text-5xl sm:text-3xl font-bold text-dental-blue mb-4 sm:mb-6">
-          Our Mission
-        </h2>
-        <p className="text-base sm:text-lg text-dental-gray mb-4 sm:mb-6 leading-relaxed">
-          We exist to support dental labs with precision and innovation. Our mission is to deliver reliable, high-quality dental design services while building trust and lasting partnerships with our clients.
-          Every lab that works with our team receives personalized designs and solutions tailored to their unique requirements and production goals.
-        </p>
-      </div>
-      <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg">
-        <h3 className="text-xl sm:text-2xl font-bold text-dental-blue mb-3 sm:mb-4">
-          What Sets Us Apart
-        </h3>
-        <ul className="space-y-2 sm:space-y-3 text-dental-gray">
-          <li className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            Same-day design delivery options available
-          </li>
-          <li className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            Expert CAD/CAM technicians for faster turnarounds
-          </li>
-          <li className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            Flexible outsourcing packages for all budgets
-          </li>
-          <li className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-            Comprehensive dental design solutions under one roof
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 
       {/* VALUES SECTION */}
@@ -197,56 +128,56 @@ const Home = () => {
         </div>
       </section>
 
-     {/* ✅ MISSION SECTION with background image */}
-<section
-  className="dental-section relative bg-cover bg-center py-16"
-  style={{
-    backgroundImage: "url('/backgrround.png')", // replace with your image path
-  }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-dental-blue/90"></div> {/* 40% opacity overlay */}
+      {/* ✅ MISSION SECTION with background image */}
+      <section
+        className="dental-section relative bg-cover bg-center py-16"
+        style={{
+          backgroundImage: "url('/backgrround.png')", // replace with your image path
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-dental-blue/90"></div> {/* 40% opacity overlay */}
 
-  <div className="dental-container grid lg:grid-cols-2 gap-12 items-center relative z-10">
-    <motion.div
-      initial={{ opacity: 0, x: -40 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-    >
-      <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
-      <p className="text-lg text-white/90 mb-6 leading-relaxed">
-        Our mission is to empower dental professionals with precise, fast, and reliable digital designs that enhance patient outcomes and streamline workflows.
-      </p>
-      <p className="text-lg text-white/90 leading-relaxed">
-        Whether you're a busy lab or a growing practice, we serve as your extended design team — ensuring every case is delivered on time, every time.
-      </p>
-    </motion.div>
+        <div className="dental-container grid lg:grid-cols-2 gap-12 items-center relative z-10">
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
+            <p className="text-lg text-white/90 mb-6 leading-relaxed">
+              Our mission is to empower dental professionals with precise, fast, and reliable digital designs that enhance patient outcomes and streamline workflows.
+            </p>
+            <p className="text-lg text-white/90 leading-relaxed">
+              Whether you're a busy lab or a growing practice, we serve as your extended design team — ensuring every case is delivered on time, every time.
+            </p>
+          </motion.div>
 
-    <motion.div
-      className="bg-white/90 p-8 rounded-2xl shadow-lg"
-      initial={{ opacity: 0, x: 40 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-    >
-      <h3 className="text-2xl font-bold text-dental-blue mb-4">What Sets Us Apart</h3>
-      <ul className="space-y-3 text-dental-gray">
-        {[
-          "24-hour average turnaround on most cases",
-          "Seamless integration with your preferred software and workflow",
-          "Dedicated account managers for personalized service",
-          "Scalable design capacity for peak demand",
-        ].map((item, idx) => (
-          <li key={idx} className="flex items-start">
-            <span className="w-2 h-2 bg-dental-blue rounded-full mt-3 mr-3 flex-shrink-0"></span>
-            {item}
-          </li>
-        ))}
-      </ul>
-    </motion.div>
-  </div>
-</section>
+          <motion.div
+            className="bg-white/90 p-8 rounded-2xl shadow-lg"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-bold text-dental-blue mb-4">What Sets Us Apart</h3>
+            <ul className="space-y-3 text-dental-gray">
+              {[
+                "24-hour average turnaround on most cases",
+                "Seamless integration with your preferred software and workflow",
+                "Dedicated account managers for personalized service",
+                "Scalable design capacity for peak demand",
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start">
+                  <span className="w-2 h-2 bg-dental-blue rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
+      </section>
 
 
       {/* ✅ VALUES SECTION */}
@@ -280,64 +211,25 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA SECTION */}
-   {/* Special Offer */}
-<section
-  className="relative dental-section bg-fixed bg-center bg-cover"
-  style={{
-    backgroundImage: "url('/background.png')", // Replace with your background image
-  }}
->
-  {/* Dark transparent overlay */}
-  <div className="absolute inset-0 bg-black/50"></div>
+      
 
-  {/* Content */}
-  <div className="relative dental-container text-center">
-    <h2 className="text-3xl font-bold text-white mb-6">
-      Limited Time Offer for New Clients
-    </h2>
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto mb-8">
-      <h3 className="text-2xl font-bold text-white mb-4">
-        20% Off Your First 10 Cases
-      </h3>
-      <p className="text-white/90 mb-6">
-        Experience our service at a discounted rate — perfect for labs looking to scale without extra overhead.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button
-          size="lg"
-          variant="outline"
-          className="border-white text-dental-blue hover:bg-white hover:text-dental-blue"
-        >
-          Get Started
-        </Button>
-        <Button
-          size="lg"
-          variant="outline"
-          className="border-white text-dental-blue hover:bg-white hover:text-dental-blue"
-        >
-          Book a Demo
-        </Button>
-      </div>
-    </div>
-  </div>
-</section>
+      <Services />
 
-           {/* FAQ Section */}
-    <section className="dental-section bg-white">
-  <div className="dental-container">
-    <h2 className="text-5xl font-bold text-dental-blue text-center mb-12">
-      Frequently Asked Questions
-    </h2>
-    <p className="text-xl text-dental-gray mb-8 max-w-2xl mx-auto">
-      Join hundreds of dental professionals who trust us to deliver
-      accurate, on-time designs — every time.
-    </p>
-    <Button size="lg" className="dental-button-primary bg-white text-dental-blue">
-      Schedule Your Design Consultation
-    </Button>
-  </div>
-</section>
+
+     {/* CTA Section */}
+      <section className="dental-section bg-dental-light-gray">
+        <div className="dental-container text-center">
+          <h2 className="text-3xl font-bold text-dental-blue mb-6">
+            Ready to Scale Your Design Capacity?
+          </h2>
+          <p className="text-xl text-dental-gray mb-8 max-w-2xl mx-auto">
+            Join hundreds of dental professionals who trust us to deliver accurate, on-time designs — every time.
+          </p>
+          <Button size="lg" className="dental-button-primary">
+            Schedule Your Design Consultation
+          </Button>
+        </div>
+      </section>
 
     </>
   );
