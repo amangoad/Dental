@@ -324,20 +324,21 @@ const Home = () => {
 </section>
 
            {/* FAQ Section */}
-      <section className="dental-section bg-white">
-        <div className="dental-container">
-          <h2 className="text-5xl font-bold text-dental-blue text-center mb-12">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-            Join hundreds of dental professionals who trust us to deliver
-            accurate, on-time designs — every time.
-          </p>
-          <Button size="lg" className="dental-button-primary bg-white text-white">
-            Schedule Your Design Consultation
-          </Button>
-        </motion.div>
-      </section>
+    <section className="dental-section bg-white">
+  <div className="dental-container">
+    <h2 className="text-5xl font-bold text-dental-blue text-center mb-12">
+      Frequently Asked Questions
+    </h2>
+    <p className="text-xl text-dental-gray mb-8 max-w-2xl mx-auto">
+      Join hundreds of dental professionals who trust us to deliver
+      accurate, on-time designs — every time.
+    </p>
+    <Button size="lg" className="dental-button-primary bg-white text-dental-blue">
+      Schedule Your Design Consultation
+    </Button>
+  </div>
+</section>
+
     </>
   );
 };
