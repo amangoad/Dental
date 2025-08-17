@@ -76,7 +76,7 @@ const Home = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-dental-blue font-bold mb-6 text-4xl sm:text-5xl lg:text-[64px] leading-tight">
+            <h1 className="text-dental-blue  mb-6 text-4xl sm:text-5xl lg:text-[64px] leading-tight">
               Lab Success Partner
             </h1>
             <p className="text-lg text-dental-gray mb-8 leading-relaxed">
@@ -145,7 +145,7 @@ const Home = () => {
                 <div className="text-2xl sm:text-3xl font-bold text-dental-blue mb-1 sm:mb-2">
                   <AnimatedNumber value={stat.number} duration={4} /> {/* slower count-up */}
                 </div>
-                <p className="text-sm sm:text-base text-dental-gray">{stat.label}</p>
+                <p className="text-sm sm:text-base font-bold text-dental-gray">{stat.label}</p>
               </CardContent>
             </Card>
           </motion.div>
@@ -212,7 +212,7 @@ const Home = () => {
       {/* VALUES SECTION */}
       <section className="dental-section bg-white">
         <div className="dental-container">
-          <h2 className="text-3xl font-bold text-dental-blue text-center mb-12">
+          <h2 className="text-5xl text-dental-blue text-center mb-12">
             Our Values
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
