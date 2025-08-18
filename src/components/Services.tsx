@@ -12,7 +12,7 @@ const Services = () => {
     { title: "Implant Crown ", description: "Highly accurate designs for screw-retained implant crowns that ensure stability, aesthetics, and ease of maintenance.", link: "#implant" },
     { title: "Inlay & Onlay ", description: "Digitally designed inlays and onlays that preserve natural tooth structure while ensuring strength and longevity.", link: "#inlay" },
     { title: "Valplast Flexible", description: "Flexible partial frameworks that offer comfort, aesthetics, and secure retention for daily wear.", link: "#valplast" },
-    { title: "Digital Denture", description: "Digitally designed dentures for accuracy, comfort, and rapid fabrication.", link: "#digital-denture" },
+    { title: "Digital Denture", description: "Digitally designed dentures for unmatched accuracy, ultimate comfort, and rapid fabrication..", link: "#digital-denture" },
     { title: "Night Guard ", description: "Custom night guard designs to protect teeth from grinding, clenching, and bruxism-related wear.", link: "#night-guard" },
     { title: "Cpd & Rpd", description: "Custom partial dentures that restore function while maintaining a natural, aesthetic appearance.", link: "#cpd-rpd" }
   ];

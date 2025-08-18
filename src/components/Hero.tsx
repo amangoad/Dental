@@ -163,49 +163,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* MISSION SECTION */}
-      <section className="dental-section relative bg-cover bg-center py-16" style={{ backgroundImage: "url('/background.png')" }}>
-        <div className="absolute inset-0 bg-dental-blue/70"></div>
-        <div className="dental-container grid lg:grid-cols-2 gap-12 items-center relative z-10">
-          <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
-            <p className="text-lg text-white/90 mb-6 leading-relaxed">
-              Our mission is to empower dental professionals with precise, fast, and reliable digital designs that enhance patient outcomes and streamline workflows.
-            </p>
-            <p className="text-lg text-white/90 leading-relaxed">
-              Whether you're a busy lab or a growing practice, we serve as your extended design team — ensuring every case is delivered on time, every time.
-            </p>
-          </motion.div>
-
-          <motion.div
-            className="bg-white/90 p-8 rounded-2xl shadow-lg"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-2xl font-bold text-dental-blue mb-4">What Sets Us Apart</h3>
-            <ul className="space-y-3 text-dental-gray">
-              {features.map((feature, idx) => {
-                const Icon = feature.icon;
-                return (
-                  <motion.li
-                    key={idx}
-                    className="flex items-start"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: idx * 0.2, duration: 1 }}
-                    viewport={{ once: true }}
-                  >
-                    <Icon className="w-5 h-5 text-dental-blue mt-1 mr-3 flex-shrink-0" />
-                    {feature.text}
-                  </motion.li>
-                );
-              })}
-            </ul>
-          </motion.div>
-        </div>
-      </section>
 
       <section
         className="relative bg-cover bg-center py-16"
@@ -320,6 +277,55 @@ const Home = () => {
         </div>
       </section>
 
+
+
+
+
+
+
+   {/* MISSION SECTION */}
+      <section className="dental-section relative bg-cover bg-center py-16" style={{ backgroundImage: "url('/background.png')" }}>
+        <div className="absolute inset-0 bg-dental-blue/70"></div>
+        <div className="dental-container grid lg:grid-cols-2 gap-12 items-center relative z-10">
+          <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+            <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
+            <p className="text-lg text-white/90 mb-6 leading-relaxed">
+              Our mission is to empower dental professionals with precise, fast, and reliable digital designs that enhance patient outcomes and streamline workflows.
+            </p>
+            <p className="text-lg text-white/90 leading-relaxed">
+              Whether you're a busy lab or a growing practice, we serve as your extended design team — ensuring every case is delivered on time, every time.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-white/90 p-8 rounded-2xl shadow-lg"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-bold text-dental-blue mb-4">What Sets Us Apart</h3>
+            <ul className="space-y-3 text-dental-gray">
+              {features.map((feature, idx) => {
+                const Icon = feature.icon;
+                return (
+                  <motion.li
+                    key={idx}
+                    className="flex items-start"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: idx * 0.2, duration: 1 }}
+                    viewport={{ once: true }}
+                  >
+                    <Icon className="w-5 h-5 text-dental-blue mt-1 mr-3 flex-shrink-0" />
+                    {feature.text}
+                  </motion.li>
+                );
+              })}
+            </ul>
+          </motion.div>
+        </div>
+      </section> 
       {/* TESTIMONIALS SECTION */}
       <section className="dental-section bg-dental-light-gray py-20">
         <div className="dental-container text-center">
