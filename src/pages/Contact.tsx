@@ -224,10 +224,10 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="dental-card">
               <CardContent className="p-6">
-                <h3 className="font-bold text-dental-blue mb-3">
+                <h3 className="font-bold text-5xl text-dental-blue mb-3">
                   What file formats do you accept?
                 </h3>
-                <p className="text-dental-gray text-sm">
+                <p className="text-dental-gray text-2xl">
                   We accept STL, PLY, OBJ, and other common dental CAD formats. 
                   Contact us for custom requirements.
                 </p>
@@ -235,10 +235,10 @@ const Contact = () => {
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
-                <h3 className="font-bold text-dental-blue mb-3">
+                <h3 className="font-bold text-dental-blue text-5xl mb-3">
                   How fast is your turnaround?
                 </h3>
-                <p className="text-dental-gray text-sm">
+                <p className="text-dental-gray text-2xl">
                   Most single-unit cases are delivered within 24–48 hours. 
                   Complex projects may require additional time.
                 </p>
@@ -246,20 +246,20 @@ const Contact = () => {
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
-                <h3 className="font-bold text-dental-blue mb-3">
+                <h3 className="font-bold text-dental-blue text-5xl mb-3">
                   Do you offer trial projects?
                 </h3>
-                <p className="text-dental-gray text-sm">
+                <p className="text-dental-gray text-3xl">
                   Yes, we offer sample cases so you can evaluate our quality and service before committing.
                 </p>
               </CardContent>
             </Card>
             <Card className="dental-card">
               <CardContent className="p-6">
-                <h3 className="font-bold text-dental-blue mb-3">
+                <h3 className="font-bold text-dental-blue text-5xl mb-3">
                   Is my data secure?
                 </h3>
-                <p className="text-dental-gray text-sm">
+                <p className="text-dental-gray text-3xl">
                   Absolutely — we use secure file transfer protocols and strict confidentiality agreements for all client data.
                 </p>
               </CardContent>

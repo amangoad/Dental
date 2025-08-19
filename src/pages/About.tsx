@@ -134,7 +134,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="dental-section bg-dental-light-gray">
+      {/* <section className="dental-section bg-dental-light-gray">
         <div className="dental-container text-center">
           <h2 className="text-3xl font-bold text-dental-blue mb-6">
             Ready to Scale Your Design Capacity?
@@ -146,7 +146,7 @@ const About = () => {
             Schedule Your Design Consultation
           </Button>
         </div>
-      </section>
+      </section> */}
       <Footer/>
     </div>
   );
